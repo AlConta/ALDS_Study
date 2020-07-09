@@ -8,17 +8,17 @@ int main()
     int n{ 0 };
     cin >> n;
 
-    int maxv = -200000000;
+    int maxDiv = -2000000000;
     int minv = 0;
     
     cin >> minv;
     for (int i = 1; i < n; i++) {
         int R{ 0 };
         cin >> R;
-        maxv = max(maxv, R - minv);
+        maxDiv = max(maxDiv, R - minv);
         minv = min(minv, R);
     }
-    cout << maxv << endl;
+    cout << maxDiv << endl;
 
     return 0;
 }
